@@ -6,6 +6,7 @@ openstack/ceilometer
 openstack/cinder
 openstack/cliff
 openstack/compute-api
+openstack/designate
 openstack/diskimage-builder
 openstack/django_openstack_auth
 openstack/glance
@@ -16,6 +17,8 @@ openstack/image-api
 openstack/ironic
 openstack/ironic-python-agent
 openstack/keystone
+openstack/keystonemiddleware
+openstack/keystone-specs
 openstack/marconi
 openstack/neutron
 openstack/nova
@@ -39,6 +42,7 @@ openstack/oslosphinx
 openstack/pycadf
 openstack/python-ceilometerclient
 openstack/python-cinderclient
+openstack/python-designateclient
 openstack/python-glanceclient
 openstack/python-heatclient
 openstack/python-ironicclient
@@ -54,11 +58,14 @@ openstack/sahara
 openstack/sahara-dashboard
 openstack/sahara-extra
 openstack/sahara-image-elements
+openstack/security-doc
 openstack/stevedore
 openstack/swift
 openstack/taskflow
 openstack/tempest
+openstack/training-guides
 openstack/trove
+openstack/tuskar-ui
 openstack/volume-api
 stackforge/blazar
 stackforge/blazar-nova
@@ -66,4 +73,3 @@ stackforge/python-blazarclient
 stackforge/python-openstacksdk
 stackforge/python-solumclient
 stackforge/rally
-stackforge/solum
