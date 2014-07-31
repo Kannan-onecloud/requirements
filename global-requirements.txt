@@ -1,4 +1,4 @@
-alembic>=0.6.2
+alembic>=0.6.4
 anyjson>=0.3.3
 argparse
 argcomplete>=0.6.8  # Apache-2.0
@@ -13,11 +13,11 @@ croniter>=0.3.4 # MIT License
 cryptography>=0.4 # Apache-2.0
 ddt>=0.4.0
 decorator>=3.4.0
-diskimage-builder
+diskimage-builder>=0.1.20
 Django>=1.4,<1.7
 django-bootstrap-form
 django_compressor>=1.4
-django_openstack_auth>=1.1.4
+django_openstack_auth>=1.1.6
 dnspython>=1.9.4
 dogpile.cache>=0.5.3
 eventlet>=0.13.0
@@ -26,6 +26,7 @@ falcon>=0.1.6,<0.2.0
 Flask>=0.10,<1.0
 futures>=2.1.3
 gear
+greenio>=0.6.0
 greenlet>=0.3.2
 happybase>=0.5,!=0.7
 httplib2>=0.7.5
@@ -36,7 +37,7 @@ jsonpath-rw>=1.2.0,<2.0
 jsonrpclib
 jsonschema>=2.0.0,<3.0.0
 kazoo>=1.3.1
-keystonemiddleware
+keystonemiddleware>=1.0.0
 lesscpy>=0.9j
 pyscss>=1.2.0  # MIT License
 django-pyscss>=1.0.1  # BSD License (2 clause)
@@ -51,11 +52,12 @@ netifaces>=0.10.4
 networkx>=1.8
 oauthlib>=0.6
 ordereddict
-oslo.config>=1.4.0.0a2
+oslo.config>=1.4.0.0a3
 oslo.db>=0.2.0  # Apache-2.0
 oslo.i18n>=0.1.0  # Apache-2.0
 oslo.messaging>=1.4.0.0a3
-oslo.rootwrap
+oslo.rootwrap>=1.3.0.0a1
+oslo.utils>=0.1.1                       # Apache-2.0
 oslo.vmware>=0.4                        # Apache-2.0
 osprofiler>=0.1.1                       # Apache-2.0
 os-apply-config
@@ -67,7 +69,7 @@ passlib
 Paste
 PasteDeploy>=1.5.0
 pbr>=0.6,!=0.7,<1.0
-pecan>=0.4.5
+pecan>=0.5.0
 pexpect>=3.1 # ISC License
 Pillow==2.4.0 # MIT
 pip>=1.4
@@ -88,6 +90,7 @@ pystache
 # as that has implications for testing in the gate. An exception
 # is currently being made for neutron client because of the need
 # for an incompatible change in their next release.
+python-barbicanclient>=2.1.0
 python-ceilometerclient>=1.0.6
 python-cinderclient>=1.0.7
 python-designateclient>=1.0.0
@@ -121,7 +124,7 @@ sockjs-tornado>=1.0.0,<2.0.0
 # on pypi) as < 0.8 so the "clear" version of this requirement, is
 # actually broken. The fix for this isn't until pip 1.4.1, which is
 # way more current than what most distros have.
-SQLAlchemy>=0.8.4,!=0.9.5,<=0.9.99
+SQLAlchemy>=0.8.4,<=0.8.99,>=0.9.7,<=0.9.99
 sqlalchemy-migrate>=0.9.1
 stevedore>=0.14
 suds>=0.4
@@ -136,7 +139,24 @@ WSME>=0.6
 xattr>=0.4
 XenAPI>=1.2
 xstatic>=1.0.0  # MIT License
-xstatic-jquery>=1.10.2.1  # MIT License
+xstatic-angular>=1.2.1.1  # MIT License
+xstatic-angular-cookies>=1.2.1.1  # MIT License
+xstatic-angular-mock>=1.2.1.1  # MIT License
+xstatic-bootstrap-datepicker>=0.0.0.1  # Apache 2.0 License
+xstatic-bootstrap-scss>=2.0.1.1,<3  # Apache 2.0 License
+xstatic-d3>=3.1.6.2  # BSD License (3 clause)
+xstatic-hogan>=2.0.0.2  # Apache 2.0 License
+xstatic-jasmine>=1.3.1.1  # MIT License
+xstatic-jquery>=1.7.2  # MIT License
+xstatic-jquery.bootstrap.wizard>=1.0.0.1  # MIT License
+xstatic-jquery-migrate>=1.2.1.1  # MIT License
+xstatic-jquery.quicksearch>=2.0.3.1  # MIT License
+xstatic-jquery.tablesorter>=2.0.5b.0  # MIT License
+xstatic-jquery-ui>=1.8.18  # MIT License
+xstatic-jsencrypt>=2.0.0.1  # MIT License
+xstatic-qunit>=1.14.0.1  # MIT License
+xstatic-rickshaw>=1.4.6.2  # BSD License (prior)
+xstatic-spin>=1.2.5.2  # MIT License
 
 # Testing tools below, which are typically in test-requires.txt
 
@@ -150,7 +170,7 @@ doc8  # Apache-2.0
 docutils==0.9.1
 feedparser
 fixtures>=0.3.14
-flake8==2.1.0
+flake8==2.2.2
 hacking>=0.9.2,<0.10
 hgtools # dependency of pytest-runner that is only in setup_requires
 httpretty>=0.8.0,!=0.8.1,!=0.8.2
@@ -165,7 +185,7 @@ nose
 nose-exclude
 nosehtmloutput>=0.0.3
 nosexcover
-openstack-doc-tools>=0.16.1
+openstack-doc-tools>=0.17
 openstack.nose_plugin>=0.7
 oslosphinx
 oslotest
@@ -180,7 +200,7 @@ python-ldap==2.3.13
 python-subunit>=0.0.18
 pyzmq==2.2.0.1
 redis
-retrying>=1.2.1 # Apache-2.0
+retrying>=1.2.2 # Apache-2.0
 selenium
 sphinx>=1.1.2,!=1.2.0,<1.3
 sphinxcontrib-docbookrestapi
@@ -191,13 +211,13 @@ testrepository>=0.0.18
 testresources>=0.2.4
 testscenarios>=0.4
 testtools>=0.9.34
-trollius>=0.1.4
+trollius>=1.0
 unittest2
 wrapt>=1.7.0 # BSD License
 WebTest>=2.0
 wsgi_intercept>=0.6.1 # MIT License
 xvfbwrapper>=0.1.3 #license: MIT
-zake>=0.0.20 # Apache-2.0
+zake>=0.0.26 # Apache-2.0
 
 # External libraries not tested in the gate, but present here to synchronize
 # packaging efforts. These are required by projects to enable hardware- or
