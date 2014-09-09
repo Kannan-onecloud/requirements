@@ -102,7 +102,7 @@ python-ceilometerclient>=1.0.6
 python-cinderclient>=1.0.7
 python-designateclient>=1.0.0
 python-heatclient>=0.2.9
-python-glanceclient>=0.13.1
+python-glanceclient>=0.14.0
 python-ironicclient>=0.2.1
 python-keystoneclient>=0.10.0
 python-marconiclient>=0.0.2
@@ -196,7 +196,7 @@ nosexcover
 openstack-doc-tools>=0.18.1
 openstack.nose_plugin>=0.7
 oslosphinx>=2.2.0.0a2
-oslotest>=1.1.0.0a1
+oslotest>=1.1.0.0a2
 pep8==1.5.7
 proboscis==1.2.5.3
 psycopg2
